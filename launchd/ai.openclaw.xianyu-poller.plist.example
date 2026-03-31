@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>ai.openclaw.xianyu-poller</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/bin/python3</string>
+      <string>__WORKDIR__/automation/poller.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>__WORKDIR__</string>
+
+    <key>StartInterval</key>
+    <integer>10</integer>
+
+    <key>StandardOutPath</key>
+    <string>__WORKDIR__/logs/xianyu_poller.stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>__WORKDIR__/logs/xianyu_poller.stderr.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>CHROME_DEBUG_PORT</key>
+      <string>9222</string>
+      <key>XIANYU_IM_URL</key>
+      <string>https://www.goofish.com/im</string>
+
+      <key>XIANYU_ITEM_DESC</key>
+      <string>（在此填写你的商品/服务名称）</string>
+
+      <key>XIANYU_REFRESH_AFTER_REPLY</key>
+      <string>1</string>
+      <key>XIANYU_REPLY_GAP_SEC</key>
+      <string>0.8</string>
+
+      <!-- Optional: OpenClaw -->
+      <key>NODE_BIN</key>
+      <string>node</string>
+      <key>OPENCLAW_BIN</key>
+      <string>openclaw</string>
+
+      <!-- Optional: enable debug logging -->
+      <key>XIANYU_POLL_DEBUG</key>
+      <string>0</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+  </dict>
+</plist>
+
