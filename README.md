@@ -2,7 +2,6 @@
 
 一套“闲鱼网页版 IM 自动回复”脚本模板：使用 **DrissionPage + 已登录的 Chrome（remote debugging）** 读取未读红点并自动回复。
 
-> 本仓库已做**通用化脱敏**：不包含任何个人信息、具体商品名、具体价格/押金、具体自提地址等商业细节。请自行在 `.env` 与 `prompts/` 中配置。
 
 ## 目录结构
 
@@ -47,10 +46,7 @@ export OPENCLAW_BIN="openclaw"
 python3 automation/poller.py
 ```
 
-## 隐私与安全建议
 
-- 不要把 `.env`、`data/`、任何日志、浏览器 profile 目录提交到仓库
-- 不要在开源话术里写具体地址/手机号/邮箱/收款信息/账号信息
 
 ## 免责声明
 
