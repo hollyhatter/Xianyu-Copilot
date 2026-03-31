@@ -1,7 +1,7 @@
 # Xianyu-Copilot
 
 一套“闲鱼网页版 IM 自动回复”脚本模板：使用 **DrissionPage + 已登录的 Chrome（remote debugging）** 读取未读红点并自动回复。
-
+优点是不会被封号，完全合规！！
 
 ## 目录结构
 
